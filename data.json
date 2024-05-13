@@ -1,0 +1,372 @@
+{
+    "cards": [
+        {
+            "id": "1",
+            "title": "Card 1",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "2",
+            "title": "Card 2",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "300",
+            "ratings": 5,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "3",
+            "title": "Card 3",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "400",
+            "ratings": 3,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "4",
+            "title": "Card 4",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "500",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "5",
+            "title": "Card 5",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "600",
+            "ratings": 2,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "6",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing fhbbfbou iou, eos?"
+        },
+        {
+            "id": "7",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 7,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "8",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        }
+    ],
+    "bestAuthors": [
+        {
+            "id": "108001",
+            "title": "Card 1",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108002",
+            "title": "Card 2",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "300",
+            "ratings": 5,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108003",
+            "title": "Card 3",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "400",
+            "ratings": 3,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108004",
+            "title": "Card 4",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "500",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108005",
+            "title": "Card 5",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "600",
+            "ratings": 2,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108006",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing fhbbfbou iou, eos?"
+        },
+        {
+            "id": "108007",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 7,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "108008",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        }
+    ],
+    "motivation": [
+        {
+            "id": "109001",
+            "title": "Card 1",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109002",
+            "title": "Card 2",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "300",
+            "ratings": 5,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109003",
+            "title": "Card 3",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "400",
+            "ratings": 3,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109004",
+            "title": "Card 4",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "500",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109005",
+            "title": "Card 5",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "600",
+            "ratings": 2,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109006",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing fhbbfbou iou, eos?"
+        },
+        {
+            "id": "109007",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 7,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "109008",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        }
+    ],
+    "programming": [
+        {
+            "id": "118001",
+            "title": "Card 1",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118002",
+            "title": "Card 2",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "300",
+            "ratings": 5,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118003",
+            "title": "Card 3",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "400",
+            "ratings": 3,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118004",
+            "title": "Card 4",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "500",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118005",
+            "title": "Card 5",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "600",
+            "ratings": 2,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118006",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing fhbbfbou iou, eos?"
+        },
+        {
+            "id": "118007",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 7,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "118008",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        }
+    ],
+    "recipes": [
+        {
+            "id": "208001",
+            "title": "Card 1",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208002",
+            "title": "Card 2",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "300",
+            "ratings": 5,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208003",
+            "title": "Card 3",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "400",
+            "ratings": 3,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208004",
+            "title": "Card 4",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "500",
+            "ratings": 4,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208005",
+            "title": "Card 5",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "600",
+            "ratings": 2,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208006",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing fhbbfbou iou, eos?"
+        },
+        {
+            "id": "208007",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 7,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        },
+        {
+            "id": "208008",
+            "title": "Card 6",
+            "writer": "subhadip Hazra",
+            "imageUrl": "https://conandoyleestate.com/images/news/Cover_(Hound_of_Baskervilles,_1902)-07112019164557.jpg",
+            "price": "200",
+            "ratings": 6,
+            "details": "Lorem ipsum dolor sit amet consr adipisicing elit. Libero, eos?"
+        }
+    ]
+}

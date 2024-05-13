@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="../Style/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgba(64, 148, 223, 0.103);
+            margin: 10px 3% 0 3%;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-box {
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 5px;
+            padding: 2% 6% 2% 6%;
+            width: 50%;
+            background-image: url('../Assets/contack-background.jpg');
+            background-image: cover;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: white;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg" alt="logo/img">
+            <h4>Book App</h4>
+        </div>
+        <div class="nav-item">
+            <ul>
+                <a href="/Frontend//Pages/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="/Frontend/Pages/about.html">
+                    <li>About</li>
+                </a>
+                <a href="/Frontend/Pages/terms.html">
+                    <li>Terms</li>
+                </a>
+                <a href="/Frontend/Pages/contactUs.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="user">
+            <div class="cart">
+                <a style="text-decoration: none;" href="http://127.0.0.1:3000/Frontend/Components/cart.html"><i
+                        class='bx bx-cart'
+                        style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
+            </div>
+            <div class="user-box">
+                <div class="user-acc">
+                    <img src="https://themarketingcrowd.ie/wp-content/uploads/2017/01/Round-Profile-Pic.png"
+                        alt="userProfile">
+                </div>
+                <div class="box" style="padding:2px; border-radius:3px;">
+                    <ul style="list-style: none;cursor:pointer; padding-left:5px;">
+                        <a href="http://127.0.0.1:3000/Frontend/Pages/login.html" style="text-decoration: none;">
+                            <li>Login</li>
+                        </a>
+                        <a href="http://127.0.0.1:3000/Frontend/Pages/register.html" style="text-decoration: none;">
+                            <li>Sign Up</li>
+                        </a>
+                        <li>Appearence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 5em;">
+        <div class="contact-box">
+            <h2>Get in Touch</h2>
+            <form class="contact-info">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-36">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Html</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Css</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Js</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Node Js</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:by Tomojit Chackraborty
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.querySelector('.contact-info');
+            try {
+                if (contactForm) {
+                    contactForm.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        const name = document.getElementById("name").value;
+                        const email = document.getElementById("email").value;
+                        const message = document.getElementById("message").value;
+
+                        fetch("http://localhost:5000/contact-us", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({ email, name, message }),
+                        }).then((response) => {
+                            if (!response.ok) {
+                                throw new Error("response is not ok");
+                            }
+                            return response.json();
+                        }).then((data) => {
+                            if (data.success) {
+                                alert("Thanks for your message");
+                                document.getElementById("name").value = "";
+                                document.getElementById("email").value = "";
+                                document.getElementById("message").value = "";
+                            }
+                            else {
+                                alert(" Data not send");
+                            }
+                        })
+                    })
+                }
+            }
+            catch (error) {
+                console.log("unknown server error");
+            }
+        })
+    </script>
+</body>
+
+</html>

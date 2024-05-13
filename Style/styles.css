@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+li{
+    color: #0b0b0b;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h4{
+    color: black;
+    font-size: medium;
+}
+.logo img{
+    width: 40px;
+    height: 30px;
+    mix-blend-mode:multiply;
+}
+.nav-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.nav-item ul{
+    display: flex;
+    gap: 3em;
+}
+.nav-item li{
+    list-style: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.nav-item li:hover {
+    color: #0b0b0b;
+}
+.user-acc{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.user-acc img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.box{
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.715);
+    margin-right: 10px;
+}
+
+.user-acc:hover + .box,
+.box:hover {
+    display: block;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.banner {
+    margin-top: 30px;
+    border-radius: 3px;
+    width: 100%;
+    height: 20em;
+    color: #FFF;
+    background: url('https://fortbragglibrary.org/wp-content/uploads/2017/12/Book-banner.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.banner .text {
+    text-align: center;
+    padding: 0 30px;
+}
+#card-container,#card-container-one,#card-container-two,#card-container-three,#card-container-four {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    overflow-x: auto;
+}
+
+#card-container::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+#card-container-one::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+#card-container-two::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+#card-container-three::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+#card-container-four::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+#my-cart::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+.card{
+    min-width: 17.2em;
+    height: 100%;
+    text-align: justify;
+    padding: 1.3em;
+    border-radius: 10px;
+    background-color: #d2d27521;
+}
+.card .card-img{
+    width: 100%;
+    height: 6em;
+}
+.card img{
+    width: 100%;
+    height: 12em;
+}
+.card .card-btn{
+    display: flex;
+    justify-content: center;
+}
+.card button{
+    width: 100%;
+    height: 40px;
+    border: .5px solid rgba(50, 50, 225, 0.434);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover{
+    color: white;
+    background-color: rgba(0, 0, 255, 0.715);
+    border: #F4F5F7;
+}
+@media screen and (max-width : 768px) {
+    #card-container,#card-container-one,#my-cart{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: left;
+    transition: width 0.5s ease-in-out;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.navigation.btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navigation.btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center; /* Center the login box */
+    align-items: center;
+    transition: height .2s ease;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition : transform .18s ease;
+    transform : translateX(0);
+}
+
+.wrapper .form-box.login {
+    /* Centering the login box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    right: 20px; /* Adjust as needed to move to the right */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%);
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #eef0f1;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.registration-form{
+    padding: 25px;
+    width: 480px;
+    height: 440px;
+    border: 2px solid rgba(22, 21, 21, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(19, 19, 19, 0.6);
+    justify-content: center; /* Center the login box */
+    align-items: center;
+    transition: height .2s ease;
+}
+
+.login-register {
+    font-size: 0.9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 2px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+.confirm-password{
+    width: 150px;
+}
+.heading{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    color: #162938;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.back p{
+    color: #162938;
+}
+.back a{
+    text-decoration: none;
+}
