@@ -6,7 +6,7 @@ function showAlert(title,text,email) {
         confirmButtonText: 'OK'
     }).then(() => {
         localStorage.setItem('loggedInUserEmail', email);
-        window.location.href = "/Frontend/Pages/index.html"
+        window.location.href = "https://tomojit123.github.io/Book-reference-website/Pages/index.html"
     })
 }
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         const result = 'error';
                         const color = 'green';
                         showSuccessToast(result,title,color);
-                        window.location.href = "/Frontend/Components/login.html/";
+                        window.location.href = "https://tomojit123.github.io/Book-reference-website/Components/login.html/";
                     }
                     else {
                         alert(data.message);
