@@ -14,7 +14,7 @@ async function myCart() {
     const email = localStorage.getItem('loggedInUserEmail');
     console.log(email);
     try {
-        const response = await fetch(`http://localhost:5000/search-book/?email=${email}`, {
+        const response = await fetch(`https://book-app-backend-1.onrender.com/search-book/?email=${email}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -86,7 +86,7 @@ async function deleteCart(cardId, email) {
         });
 
         if (result.isConfirmed) {
-            const response = await fetch("http://localhost:5000/delete-cart", {
+            const response = await fetch("https://book-app-backend-1.onrender.com/delete-cart", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -109,7 +109,7 @@ async function deleteCart(cardId, email) {
             });
 
             // Redirect after successful deletion
-            window.location.href = 'http://127.0.0.1:3000/Frontend/Components/cart.html';
+            window.location.href = 'https://tomojit123.github.io/Book-reference-website/Components/cart.html';
         }
     } catch (error) {
         console.error('Error deleting:', error);

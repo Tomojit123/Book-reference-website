@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const email = document.getElementById("email").value;
                 const password = document.getElementById("password").value;
-                fetch("http://localhost:5000/login", {
+                fetch("https://book-app-backend-1.onrender.com/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const email = document.getElementById("email").value;
                 const password = document.getElementById("password").value;
 
-                fetch("http://localhost:5000/register", {
+                fetch("https://book-app-backend-1.onrender.com/register", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     return;
                 }
 
-                fetch("http://localhost:5000/forget-password", {
+                fetch("https://book-app-backend-1.onrender.com/forget-password", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

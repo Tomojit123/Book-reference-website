@@ -67,7 +67,7 @@ let filteredCards = [];
 async function fetchDataAndPopulateContainers() {
     try {
         const responseData = await Promise.all([
-            fetch('http://127.0.0.1:3000/Frontend/data.json').then(response => response.json()),
+            fetch('https://tomojit123.github.io/Book-reference-website/data.json').then(response => response.json()),
         ]);
         
         [data] = responseData;
@@ -118,7 +118,7 @@ function addEventListeners() {
 
 // Function to add card to cart
 async function addToCart(cardId, email) {
-    fetch("http://localhost:5000/add-cart", {
+    fetch("https://book-app-backend-1.onrender.com/add-cart", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
