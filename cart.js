@@ -10,6 +10,20 @@ function createStar(ratings) {
     return starContainer;
 }
 
+
+const showSuccessToast = (title,result,color) => {
+    Swal.fire({
+        icon: result,
+        title: title,
+        toast: true,
+        iconColor:color,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1000,
+        timerProgressBar: true
+    })
+};
+
 async function myCart() {
     const email = localStorage.getItem('loggedInUserEmail');
     console.log(email);
@@ -52,7 +66,10 @@ async function myCart() {
                 }
             });
         } else {
-            alert("Failed to fetch cart items");
+            const title = "You don't have any books in your cart...";
+            const result = 'error';
+            color='red'
+            showSuccessToast(title,result,color);
         }
         addEventListeners();
     } catch (error) {

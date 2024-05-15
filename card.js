@@ -91,7 +91,7 @@ function addEventListeners() {
             const cardId = this.dataset.cardId;
             const loggedInUserEmail = email;
             if(!loggedInUserEmail){
-                window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/forgetPassword.html'
+                window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/register.html'
             }
             addToCart(cardId, loggedInUserEmail);
         });
@@ -134,7 +134,10 @@ async function addToCart(cardId, email) {
                 const color = 'green'
                 showSuccessToast(title,result,color);
             } else {
-                alert("Failed to add to cart");
+                const title ="Failed to add to cart";
+                const result = 'error';
+                color='red'
+                showSuccessToast(title,result,color);
             }
         })
         .catch(error => {
