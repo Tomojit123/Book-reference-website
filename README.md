@@ -54,8 +54,5 @@ Welcome to the Book Reference Website! This platform provides a comprehensive co
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 Feel free to customize it further to better suit your project's needs!
