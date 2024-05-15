@@ -39,7 +39,7 @@ function show() {
     signinA.style.display = 'block';
     signupA.style.display = 'block';
     logoutA.style.display = 'none';
-    console.log(gmail);
+    //console.log(gmail);
 }
 function eventOccur() {
     console.log("hello");
