@@ -9,7 +9,7 @@
 
 <!-- Keywords related to your magazine content -->
 <meta name="keywords" content="magazine, articles, insights, books, literature, reading, reviews, recommendations, fiction, non-fiction, genres, authors, publishing, bookworm, bibliophile">
-<meta name="google-site-verification" content="_aakuEHLzhTxc7b_zGTxd5XDcrz-bIl-bT9Zt58EAeg" />
+
 <!-- Open Graph Tags -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Magazine - Your Ultimate Source for Insightful Articles">
@@ -27,12 +27,13 @@
 <link rel="icon" type="image/jpg" sizes="32x32" href="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg">
 <link rel="icon" type="image/jpg" sizes="16x16" href="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg">
 
-<!-- Manifest -->
-<link rel="manifest" href="/site.webmanifest">
+
 
 <!-- Theme Color -->
 <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="../Style/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <style>
     body{
@@ -40,40 +41,158 @@
         margin: 10px 3% 0 3%;
         padding: 0;
         font-family: 'Poppins', sans-serif;
+        text-align: justify;
+    }
+    p::first-letter{
+        font-size: 24px;
+    }
+    @media screen and (max-width:768px) {
+        .nav {
+            display: none;
+        }
+
+        .app-logo {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .mobile-nav {
+            display: none;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
+    .nav-menu li {
+        margin-bottom: 3px;
     }
 </style>
 <body>
     <div class="nav">
-        <div class="logo">
+        <div class="app-logo">
             <img src="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg" alt="logo/img">
             <h4>Book App</h4>
         </div>
         <div class="nav-item">
             <ul>
-                <a href="https://tomojit123.github.io/Book-reference-website/index.html"><li>Home</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html"><li>About</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html"><li>Terms</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html"><li>Contact Us</li></a>
+                <a href="https://tomojit123.github.io/Book-reference-website/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
+                    <li>About</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html">
+                    <li>Terms</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
+                    <li>Contact Us</li>
+                </a>
             </ul>
         </div>
         <div class="user">
             <div class="cart">
-                <a style="text-decoration: none;" href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i class='bx bx-cart' style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
+                <a style="text-decoration: none;"
+                    href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i
+                        class='bx bx-cart'
+                        style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
             </div>
             <div class="user-box">
                 <div class="user-acc">
-                    <img src="https://themarketingcrowd.ie/wp-content/uploads/2017/01/Round-Profile-Pic.png" alt="userProfile">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.cCYOz6thNtGtDnD0BYfkLAHaEK&pid=Api&P=0&h=180"
+                        alt="userProfile">
                 </div>
                 <div class="box" style="padding:2px; border-radius:3px;">
                     <ul style="list-style: none;cursor:pointer; padding-left:5px;">
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html" style="text-decoration: none;"><li>Login</li></a>
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html" style="text-decoration: none;"><li>Sign Up</li></a>
-                        <li>Appearence</li>
+                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
+                            style="text-decoration: none;">
+                            <li>Login</li>
+                        </a>
+                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                            style="text-decoration: none;">
+                            <li>Sign Up</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <h1>About</h1>
+    <!-- Mobile screen navigation -->
+    <div>
+        <div style="display: flex; align-items: center; justify-content:space-between">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg" alt="logo/img">
+                <h4>Book App</h4>
+            </div>
+            <div class="mobile-nav" style="justify-content:end;">
+                <div class="cart" style="display: flex;align-items:center; gap:1em;">
+                    <a style="text-decoration: none;"
+                        href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i
+                            class='bx bx-cart'
+                            style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
+                    <button id="menu" style="border:none; cursor:pointer;" onclick="myNavigation()"><i
+                            class='bx bx-menu' style="font-size:32px;"></i></button>
+                    <button id="cross" style="border:none; cursor:pointer;display:none;" onclick="myCross()"><i
+                            class='bx bx-x' style="font-size:32px"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="nav-menu" style="width: 100%; background-color:#aeb0eff4; padding-left:3%;display:none;">
+            <ul>
+                <a href="https://tomojit123.github.io/Book-reference-website/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
+                    <li>About</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html">
+                    <li>Terms</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
+                    <li>Contact Us</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
+                    style="text-decoration: none;">
+                    <li>Login</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                    style="text-decoration: none;">
+                    <li>Sign Up</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div style="display: flex;justify-content:center;">
+
+        <h1 style="font-size:16px;font-weight:lighter;">About</h1>
+    </div>
+    <div style="display: flex; ">
+        <p style="width: 100%; height:100%; font-size:small; padding:10px;margin-top:2px;">Welcome to our Multiverse of Books, where exploration knows no bounds! Dive into a realm where the written word takes on countless forms, from timeless classics to the latest trends, novels that transport you to distant worlds, captivating storybooks that ignite imagination, insightful life-related reads that enrich your journey, and even coding language guides for the tech-savvy explorers.
+            In our cosmic library, you'll find a constellation of options awaiting your discovery. Whether you're seeking the cream of the crop with our top books selection, eager to explore the latest literary sensations with our trending titles, or simply craving a gripping novel to lose yourself in, we've curated a universe of possibilities just for you.
+            For those with a penchant for unraveling the mysteries of programming languages, our collection extends beyond the realms of fiction. Delve into the intricacies of C++, master the art of Java, or embark on a journey into the realms of web development – the choice is yours.
+            Navigating our Multiverse of Books is a breeze. Simply search for your desired title, and with a flick of a virtual page, embark on a journey through the realms of your imagination. And if you find a gem that resonates with you, fear not – our cart awaits to safeguard your treasures until you return.
+            embark on a journey through the realms of your imagination. And if you find a gem that resonates with you, fear not – our cart awaits to safeguard your treasures until you return.
+            You can explore all types of books and add your favorites to your cart. Once you log in, your selected books will be securely stored in your cart, ready for your return.
+            Once you've explored to your heart's content, we invite you to share your thoughts and experiences. Whether it's a word of praise for a particularly riveting read or feedback to enhance your journey through our multiverse, your voice shapes the galaxies within our library.
+            Should you wish to embark on an odyssey beyond the pages, our contact form stands ready to connect you with me. Reach out, and together, let's chart a course through the boundless realms of literature.
+            Thank you for joining us on this extraordinary journey through the Multiverse of Books. Your adventure begins here.</p>
+            
+        </div>
+        <script>
+            function myNavigation() {
+                currentState = true;
+                document.getElementById('menu').style.display = 'none';
+                document.getElementById('cross').style.display = 'block';
+                document.getElementById('nav-menu').style.display = 'block';
+            }
+            function myCross() {
+                document.getElementById('menu').style.display = 'block';
+                document.getElementById('cross').style.display = 'none';
+                document.getElementById('nav-menu').style.display = 'none';
+    
+            }
+        </script>
 </body>
 </html>

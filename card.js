@@ -4,7 +4,7 @@ const cardContainerTwo = document.getElementById('card-container-two');
 const cardContainerThree = document.getElementById('card-container-three');
 const cardContainerFour = document.getElementById('card-container-four');
 let data = {}
-
+const email = localStorage.getItem('loggedInUserEmail');
 
 
 // Function to create star rating
@@ -40,34 +40,13 @@ function createCard(card) {
     return div;
 }
 
-// Function to create a single card
-function createCard(card) {
-    const div = document.createElement('div');
-    div.classList.add('card');
-    
-    div.innerHTML = `
-    <img src=${card.imageUrl}>
-    <h4>${card.title}</h4>
-    <p>${card.writer}</p>
-    <p>${card.details}</p>
-    <h3></h3>
-    <h3>₹ ${card.price}</h3>
-    <button data-card-id=${card.id}>Add to cart</button>
-    `;
-    
-    const starContainer = div.querySelector('h3');
-    starContainer.appendChild(createStar(card.ratings));
-    
-    return div;
-}
-
 let filteredCards = []; 
 
 // Fetch JSON files and populate card containers
 async function fetchDataAndPopulateContainers() {
     try {
         const responseData = await Promise.all([
-            fetch('https://tomojit123.github.io/Book-reference-website/data.json').then(response => response.json()),
+            fetch('./data.json').then(response => response.json()),
         ]);
         
         [data] = responseData;
@@ -110,7 +89,10 @@ function addEventListeners() {
     document.querySelectorAll('.card button').forEach(button => {
         button.addEventListener('click', function () {
             const cardId = this.dataset.cardId;
-            const loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+            const loggedInUserEmail = email;
+            if(!loggedInUserEmail){
+                window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/forgetPassword.html'
+            }
             addToCart(cardId, loggedInUserEmail);
         });
     });
@@ -118,6 +100,13 @@ function addEventListeners() {
 
 // Function to add card to cart
 async function addToCart(cardId, email) {
+    if(email === null){
+        const title = 'Login first';
+        const result = 'error';
+        color='red'
+        showSuccessToast(title,result,color);
+        window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/register.html'
+    }
     fetch("https://book-app-backend-1.onrender.com/add-cart", {
         method: "POST",
         headers: {

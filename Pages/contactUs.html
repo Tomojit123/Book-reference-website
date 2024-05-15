@@ -7,7 +7,7 @@
     <title>Magazine - Your Ultimate Source for Insightful Articles</title>
 <link rel="canonical" href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
 <meta name="description" content="Welcome to Magazine, your go-to for insightful articles on various topics. Join us for learning and empowerment!">
-<meta name="google-site-verification" content="_aakuEHLzhTxc7b_zGTxd5XDcrz-bIl-bT9Zt58EAeg" />
+
 <!-- Keywords related to your magazine content -->
 <meta name="keywords" content="magazine, articles, insights, books, literature, reading, reviews, recommendations, fiction, non-fiction, genres, authors, publishing, bookworm, bibliophile">
 
@@ -28,8 +28,8 @@
 <link rel="icon" type="image/jpg" sizes="32x32" href="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg">
 <link rel="icon" type="image/jpg" sizes="16x16" href="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg">
 
-<!-- Manifest -->
-<link rel="manifest" href="/site.webmanifest">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
 
 <!-- Theme Color -->
 <meta name="theme-color" content="#ffffff">
@@ -84,58 +84,136 @@
             background-color: white;
         }
 
-        button {
+        .submit-button {
             background-color: #007bff;
             color: white;
-            padding: 10px 80px;
+            padding:5px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
 
-        button:hover {
+        .submit-button:hover {
             background-color: #0056b3;
+        }
+        @media screen and (max-width:768px) {
+            .nav {
+                display: none;
+            }
+    
+            .app-logo {
+                display: none;
+            }
+        }
+    
+        @media screen and (min-width:768px) {
+            .mobile-nav {
+                display: none;
+            }
+    
+            .logo {
+                display: none;
+            }
+        }
+    
+        .nav-menu li {
+            margin-bottom: 3px;
         }
     </style>
 </head>
 
 <body>
     <div class="nav">
-        <div class="logo">
+        <div class="app-logo">
             <img src="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg" alt="logo/img">
             <h4>Book App</h4>
         </div>
         <div class="nav-item">
             <ul>
-                <a href="https://tomojit123.github.io/Book-reference-website/index.html"><li>Home</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html"><li>About</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html"><li>Terms</li></a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html"><li>Contact Us</li></a>
+                <a href="https://tomojit123.github.io/Book-reference-website/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
+                    <li>About</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html">
+                    <li>Terms</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
+                    <li>Contact Us</li>
+                </a>
             </ul>
         </div>
         <div class="user">
             <div class="cart">
-                <a style="text-decoration: none;" href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i
+                <a style="text-decoration: none;"
+                    href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i
                         class='bx bx-cart'
                         style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
             </div>
             <div class="user-box">
                 <div class="user-acc">
-                    <img src="https://themarketingcrowd.ie/wp-content/uploads/2017/01/Round-Profile-Pic.png"
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.cCYOz6thNtGtDnD0BYfkLAHaEK&pid=Api&P=0&h=180"
                         alt="userProfile">
                 </div>
                 <div class="box" style="padding:2px; border-radius:3px;">
                     <ul style="list-style: none;cursor:pointer; padding-left:5px;">
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html" style="text-decoration: none;">
+                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
+                            style="text-decoration: none;">
                             <li>Login</li>
                         </a>
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html" style="text-decoration: none;">
+                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                            style="text-decoration: none;">
                             <li>Sign Up</li>
                         </a>
-                        <li>Appearence</li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Mobile screen navigation -->
+    <div>
+        <div style="display: flex; align-items: center; justify-content:space-between">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/82/d3/29/82d329c6b8c4141e3172456815ab6621.jpg" alt="logo/img">
+                <h4>Book App</h4>
+            </div>
+            <div class="mobile-nav" style="justify-content:end;">
+                <div class="cart" style="display: flex;align-items:center; gap:1em;">
+                    <a style="text-decoration: none;"
+                        href="https://tomojit123.github.io/Book-reference-website/Components/cart.html"><i
+                            class='bx bx-cart'
+                            style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
+                    <button id="menu" style="border:none; cursor:pointer;" onclick="myNavigation()"><i
+                            class='bx bx-menu' style="font-size:32px;"></i></button>
+                    <button id="cross" style="border:none; cursor:pointer;display:none;" onclick="myCross()"><i
+                            class='bx bx-x' style="font-size:32px"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="nav-menu" style="width: 100%; background-color:#aeb0eff4; padding-left:3%;display:none;">
+            <ul>
+                <a href="https://tomojit123.github.io/Book-reference-website/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
+                    <li>About</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html">
+                    <li>Terms</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
+                    <li>Contact Us</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
+                    style="text-decoration: none;">
+                    <li>Login</li>
+                </a>
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                    style="text-decoration: none;">
+                    <li>Sign Up</li>
+                </a>
+            </ul>
         </div>
     </div>
     <div class="container" style="margin-bottom: 5em;">
@@ -154,7 +232,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Enter your message"></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button class="submit-button" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -165,22 +243,16 @@
                 <span>Get connected with us on social networks:</span>
             </div>
             <div>
-                <a href="" class="me-4 text-reset">
+                <a href="#" class="me-4 text-reset">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.instagram.com/arko_chakraborty12/" class="me-4 text-reset">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.linkedin.com/in/tomojit-chakraborty-12aa04238/" class="me-4 text-reset">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://github.com/Tomojit123" class="me-4 text-reset">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -219,27 +291,26 @@
                             Useful links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Home</a>
+                            <a href="https://tomojit123.github.io/Book-reference-website/Pages/index.html" class="text-reset">Home</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">About</a>
+                            <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html" class="text-reset">About</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Terms</a>
+                            <a href="https://tomojit123.github.io/Book-reference-website/Pages/terms.html" class="text-reset">Terms</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Contact Us</a>
+                            <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html" class="text-reset">Contact Us</a>
                         </p>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-home me-3"></i> Mondalpur, West Bengal, 713336</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            info@example.com
+                            kalpanabanerjee11194@gmail.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-phone me-3"></i> 8509011957</p>
                     </div>
                 </div>
             </div>
@@ -288,6 +359,18 @@
                 console.log("unknown server error");
             }
         })
+            function myNavigation() {
+                currentState = true;
+                document.getElementById('menu').style.display = 'none';
+                document.getElementById('cross').style.display = 'block';
+                document.getElementById('nav-menu').style.display = 'block';
+            }
+            function myCross() {
+                document.getElementById('menu').style.display = 'block';
+                document.getElementById('cross').style.display = 'none';
+                document.getElementById('nav-menu').style.display = 'none';
+    
+            }
     </script>
 </body>
 

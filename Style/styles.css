@@ -18,15 +18,15 @@ li{
 a{
     text-decoration: none;
 }
-.logo{
+.logo,.app-logo{
     display: flex;
     align-items: center;
 }
-.logo h4{
+.logo h4,.app-logo h4{
     color: black;
     font-size: medium;
 }
-.logo img{
+.logo img,.app-logo img{
     width: 40px;
     height: 30px;
     mix-blend-mode:multiply;
@@ -130,11 +130,12 @@ a{
 }
 .card{
     min-width: 17.2em;
-    height: 100%;
+    min-height: 15em;
+    overflow: hidden;
     text-align: justify;
     padding: 1.3em;
     border-radius: 10px;
-    background-color: #d2d27521;
+    background-color: #ededfd;
 }
 .card .card-img{
     width: 100%;
@@ -147,6 +148,20 @@ a{
 .card .card-btn{
     display: flex;
     justify-content: center;
+}
+.card h1{
+    font-size: 17px;
+}
+.card h4{
+    font-size: 15px;
+    font-weight: lighter;
+    font:small;
+}
+.card p {
+    min-height: 7em;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card button{
     width: 100%;
@@ -161,7 +176,7 @@ a{
     border: #F4F5F7;
 }
 @media screen and (max-width : 768px) {
-    #card-container,#card-container-one,#my-cart{
+    #card-container,#card-container-one,#my-cart,#card-container-two,#card-container-three,#card-container-four{
         display: flex;
         flex-direction: column;
     }
@@ -238,7 +253,7 @@ header {
     color: #162938;
 }
 
-.wrapper {
+.wrapper-register {
     position: relative;
     width: 440px;
     height: 440px;
@@ -246,40 +261,40 @@ header {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center; /* Center the login box */
-    align-items: center;
-    transition: height .2s ease;
+    
 }
 
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
+    
 }
 
-.wrapper .form-box.login {
+.wrapper{
     transition : transform .18s ease;
     transform : translateX(0);
-}
-
-.wrapper .form-box.login {
-    /* Centering the login box */
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:#F4F5F7;
+
 }
 
 .wrapper .form-box.register {
     position: absolute;
-    right: 20px; /* Adjust as needed to move to the right */
-    top: 50%; /* Vertically center */
+    right: 20px;
+    top: 50%;
     transform: translateY(-50%);
 }
 
-.form-box h2 {
+.login-heading {
     font-size: 2em;
-    color: #eef0f1;
-    text-align: center;
+    display:flex ;
+    justify-content: center;
 }
 
 .input-box {
