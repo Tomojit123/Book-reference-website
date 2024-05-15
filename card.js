@@ -23,7 +23,7 @@ function createStar(ratings) {
 function createCard(card) {
     const div = document.createElement('div');
     div.classList.add('card');
-    
+
     div.innerHTML = `
     <img src=${card.imageUrl}>
     <h4>${card.title}</h4>
@@ -33,14 +33,18 @@ function createCard(card) {
     <h3>₹ ${card.price}</h3>
         <button data-card-id=${card.id}>Add to cart</button>
     `;
-    
+
     const starContainer = div.querySelector('h3');
     starContainer.appendChild(createStar(card.ratings));
 
     return div;
 }
 
-let filteredCards = []; 
+let filteredCards = [];
+let filteredCardsOne = [];
+let filteredCardsTwo=[];
+let filteredCardsThree=[];
+let filteredCardsFour=[];
 
 // Fetch JSON files and populate card containers
 async function fetchDataAndPopulateContainers() {
@@ -48,19 +52,19 @@ async function fetchDataAndPopulateContainers() {
         const responseData = await Promise.all([
             fetch('./data.json').then(response => response.json()),
         ]);
-        
+
         [data] = responseData;
-        
+
         data.cards.forEach(card => {
             const createCards = createCard(card);
             cardContainer.appendChild(createCards);
         });
-        
+
         data.bestAuthors.forEach(card => {
             const createCards = createCard(card);
             cardContainerOne.appendChild(createCards);
         });
-        
+
         data.motivation.forEach(card => {
             const createCards = createCard(card);
             cardContainerTwo.appendChild(createCards);
@@ -70,14 +74,11 @@ async function fetchDataAndPopulateContainers() {
             const createCards = createCard(card);
             cardContainerThree.appendChild(createCards);
         });
-        
+
         data.recipes.forEach(card => {
             const createCards = createCard(card);
             cardContainerFour.appendChild(createCards);
         });
-        
-        filteredCards = data.cards;
-
         addEventListeners();
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -90,7 +91,7 @@ function addEventListeners() {
         button.addEventListener('click', function () {
             const cardId = this.dataset.cardId;
             const loggedInUserEmail = email;
-            if(!loggedInUserEmail){
+            if (!loggedInUserEmail) {
                 window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/register.html'
             }
             addToCart(cardId, loggedInUserEmail);
@@ -100,11 +101,11 @@ function addEventListeners() {
 
 // Function to add card to cart
 async function addToCart(cardId, email) {
-    if(!email){
+    if (!email) {
         const title = 'Login first';
         const result = 'error';
-        color='red'
-        showSuccessToast(title,result,color);
+        color = 'red'
+        showSuccessToast(title, result, color);
         window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/register.html'
         return;
     }
@@ -125,49 +126,81 @@ async function addToCart(cardId, email) {
             if (data.success && data.message === "exist") {
                 const title = 'this book is already exist to your card';
                 const result = 'error';
-                color='red'
-                showSuccessToast(title,result,color);
+                color = 'red'
+                showSuccessToast(title, result, color);
 
             }
             else if (data.success) {
                 const title = "Book is added to cart "
                 const result = 'success';
                 const color = 'green'
-                showSuccessToast(title,result,color);
+                showSuccessToast(title, result, color);
             } else {
-                const title ="Failed to add to cart";
+                const title = "Failed to add to cart";
                 const result = 'error';
-                color='red'
-                showSuccessToast(title,result,color);
+                color = 'red'
+                showSuccessToast(title, result, color);
             }
         })
         .catch(error => {
             console.error("Error adding to cart:", error);
             alert("Internal server error");
         });
-    }
-    
-    
-    
-    document.getElementById('search-button').addEventListener('click', function(event) {
-        event.preventDefault();
-        const searchInput = document.getElementById('search-input').value.trim().toLowerCase();
-        if (searchInput !== '') {
-            
-            filteredCards = data.cards.filter(card => {
-                document.getElementById('search-input').value = "";
-                return card.title.toLowerCase().includes(searchInput);
+}
+
+
+
+document.getElementById('search-button').addEventListener('click', function (event) {
+    event.preventDefault();
+    const searchInput = document.getElementById('search-input').value.trim().toLowerCase();
+    if (searchInput !== '') {
+
+        filteredCards = data.cards.filter(card => {
+            document.getElementById('search-input').value = "";
+            return card.title.toLowerCase().includes(searchInput);
         });
-        
+        filteredCardsOne = data.bestAuthors.filter(card => {
+            document.getElementById('search-input').value = "";
+            return card.title.toLowerCase().includes(searchInput);
+        });
+        filteredCardsTwo = data.motivation.filter(card => {
+            document.getElementById('search-input').value = "";
+            return card.title.toLowerCase().includes(searchInput);
+        });
+        filteredCardsThree = data.programming.filter(card => {
+            document.getElementById('search-input').value = "";
+            return card.title.toLowerCase().includes(searchInput);
+        }); filteredCardsFour = data.recipes.filter(card => {
+            document.getElementById('search-input').value = "";
+            return card.title.toLowerCase().includes(searchInput);
+        });
+
+
         cardContainer.innerHTML = '';
         cardContainerOne.innerHTML = '';
         cardContainerTwo.innerHTML = '';
         cardContainerThree.innerHTML = '';
         cardContainerFour.innerHTML = '';
-
+        console.log(filteredCards);
         filteredCards.forEach(card => {
             const createCards = createCard(card);
             cardContainer.appendChild(createCards);
+        });
+        filteredCardsOne.forEach(card => {
+            const createCards = createCard(card);
+            cardContainerOne.appendChild(createCards);
+        });
+        filteredCardsTwo.forEach(card => {
+            const createCards = createCard(card);
+            cardContainerTwo.appendChild(createCards);
+        });
+        filteredCardsThree.forEach(card => {
+            const createCards = createCard(card);
+            cardContainerThree.appendChild(createCards);
+        });
+        filteredCardsFour.forEach(card => {
+            const createCards = createCard(card);
+            cardContainerFour.appendChild(createCards);
         });
     } else {
         fetchDataAndPopulateContainers();
@@ -176,12 +209,12 @@ async function addToCart(cardId, email) {
 
 fetchDataAndPopulateContainers();
 
-const showSuccessToast = (title,result,color) => {
+const showSuccessToast = (title, result, color) => {
     Swal.fire({
         icon: result,
         title: title,
         toast: true,
-        iconColor:color,
+        iconColor: color,
         position: 'top-end',
         showConfirmButton: false,
         timer: 1000,
