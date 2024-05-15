@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     return response.json();
                 }).then((data) => {
+                    console.log(data);
                     if (data.success) {
                         const title = "Login Successfully";
                         const text = "Login Successfully";

@@ -69,10 +69,6 @@ a{
     margin-right: 10px;
 }
 
-.user-acc:hover + .box,
-.box:hover {
-    display: block;
-}
 .user{
     display: flex;
     align-items: center;

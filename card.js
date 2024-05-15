@@ -100,12 +100,13 @@ function addEventListeners() {
 
 // Function to add card to cart
 async function addToCart(cardId, email) {
-    if(email === null){
+    if(!email){
         const title = 'Login first';
         const result = 'error';
         color='red'
         showSuccessToast(title,result,color);
         window.href = 'https://tomojit123.github.io/Book-reference-website/Pages/register.html'
+        return;
     }
     fetch("https://book-app-backend-1.onrender.com/add-cart", {
         method: "POST",
