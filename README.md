@@ -1,8 +1,12 @@
-# Book Reference Website
+<div align="center">
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="300">
+</div>
+
+# 📚 Book Reference Website
 
 Welcome to the Book Reference Website! This platform provides a comprehensive collection of books across various genres, including programming, self-help, recipe books, and more. Users can efficiently search for their desired books, view verified ratings, and check current prices.
 
-## Features
+## ✨ Features
 
 - **Authentication**: Users can easily sign up, log in, and log out.
 - **Responsive Design**: The UI is meticulously crafted to ensure optimal viewing experience across all devices.
@@ -12,7 +16,7 @@ Welcome to the Book Reference Website! This platform provides a comprehensive co
 - **SEO Optimized**: Achieved an impressive SEO rating of 92 through meta tag optimization.
 - **Flexible Data Customization**: JSON-based data retrieval allows for seamless customization and presentation of data.
 
-## Technologies Used
+## 💻 Technologies Used
 
 - **Frontend**:
   - HTML
@@ -26,16 +30,12 @@ Welcome to the Book Reference Website! This platform provides a comprehensive co
 - **Database**:
   - MongoDB
   
-## Hosting Details
+## 🌐 Hosting Details
 
 - **Frontend**: Hosted on GitHub Pages
 - **Backend**: Hosted on Render
 
-## Website Link
-
-[Book Reference Website](https://tomojit123.github.io/Book-reference-website/Pages/index.html)
-
-## Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository:
    ```
@@ -50,9 +50,9 @@ Welcome to the Book Reference Website! This platform provides a comprehensive co
    npm start
    ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
 
 
-Feel free to customize it further to better suit your project's needs!
+This README now includes colorful emojis, an animated GIF, and a more visually appealing layout. Feel free to further customize it according to your preferences!
