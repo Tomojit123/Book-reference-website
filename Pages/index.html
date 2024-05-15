@@ -83,7 +83,7 @@
         </div>
         <div class="nav-item">
             <ul>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/index.html">
+                <a href="">
                     <li>Home</li>
                 </a>
                 <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
@@ -104,20 +104,22 @@
                         class='bx bx-cart'
                         style="display: flex; align-items:center; justify-content:center; font-size:30px;color:black"></i></a>
             </div>
-            <div class="user-box">
-                <div class="user-acc">
+            <div class="user-box" id="user-box">
+                <div onclick="showBox()" class="user-acc">
                     <img src="https://tse2.mm.bing.net/th?id=OIP.cCYOz6thNtGtDnD0BYfkLAHaEK&pid=Api&P=0&h=180"
                         alt="userProfile">
                 </div>
-                <div class="box" style="padding:2px; border-radius:3px;">
+                <div class="box" id="box" style="padding:2px; border-radius:3px;display:none;">
                     <ul style="list-style: none;cursor:pointer; padding-left:5px;">
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
-                            style="text-decoration: none;">
+                        <a id="sign-in-a" href="https://tomojit123.github.io/Book-reference-website/Pages/login.html" style="text-decoration: none;">
                             <li>Login</li>
                         </a>
-                        <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                        <a id="sign-up-a" href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
                             style="text-decoration: none;">
                             <li>Sign Up</li>
+                        </a>
+                        <a id="log-out-a" onclick="show()" style="text-decoration: none;">
+                            <li>Log Out</li>
                         </a>
                     </ul>
                 </div>
@@ -146,7 +148,7 @@
         </div>
         <div id="nav-menu" style="width: 100%; background-color:#aeb0eff4; padding-left:3%;display:none;">
             <ul>
-                <a href="">
+                <a href="https://tomojit123.github.io/Book-reference-website/Pages/index.html">
                     <li>Home</li>
                 </a>
                 <a href="https://tomojit123.github.io/Book-reference-website/Pages/about.html">
@@ -158,13 +160,16 @@
                 <a href="https://tomojit123.github.io/Book-reference-website/Pages/contactUs.html">
                     <li>Contact Us</li>
                 </a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
+                <a id="sign-in-mob-a" href="https://tomojit123.github.io/Book-reference-website/Pages/login.html"
                     style="text-decoration: none;">
                     <li>Login</li>
                 </a>
-                <a href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
+                <a id="sign-up-mob-a" href="https://tomojit123.github.io/Book-reference-website/Pages/register.html"
                     style="text-decoration: none;">
                     <li>Sign Up</li>
+                </a>
+                <a id="log-out-mob-a" onclick="show()" style="text-decoration: none;cursor:pointer;">
+                    <li>Log Out</li>
                 </a>
             </ul>
         </div>
@@ -217,7 +222,7 @@
     </footer>
     <script src="../card.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://tomojit123.github.io/Book-reference-website/logout.js"></script>
+    <script src="../logout.js"></script>
 </body>
 
 </html>
