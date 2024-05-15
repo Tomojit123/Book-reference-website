@@ -6,7 +6,7 @@ var signupMobA = document.getElementById('sign-up-mob-a');
 var logoutMobA = document.getElementById('log-out-mob-a');
 var userBox = document.getElementById('user-box');
 
-let gmail = localStorage.getItem('loggedInUsergmail');
+let gmail = localStorage.getItem('loggedInUserEmail');
 console.log(gmail);
 function myNavigation() {
     currentState = true;
@@ -35,7 +35,7 @@ function showBox() {
 
 function show() {
     //console.log("button clicked");
-    localStorage.removeItem('loggedInUsergmail');
+    localStorage.removeItem('loggedInUserEmail');
     signinA.style.display = 'block';
     signupA.style.display = 'block';
     logoutA.style.display = 'none';
