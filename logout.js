@@ -6,16 +6,16 @@ var signupMobA = document.getElementById('sign-up-mob-a');
 var logoutMobA = document.getElementById('log-out-mob-a');
 var userBox = document.getElementById('user-box');
 
-let email = localStorage.getItem('loggedInUserEmail');
-console.log(email);
+let gmail = localStorage.getItem('loggedInUsergmail');
+console.log(gmail);
 function myNavigation() {
     currentState = true;
     document.getElementById('menu').style.display = 'none';
     document.getElementById('cross').style.display = 'block';
     document.getElementById('nav-menu').style.display = 'block';
-    signinMobA.style.display = email ? 'none' : 'block';
-    signupMobA.style.display = email ? 'none' : 'block';
-    logoutMobA.style.display = email ? 'block' : 'none';
+    signinMobA.style.display = gmail ? 'none' : 'block';
+    signupMobA.style.display = gmail ? 'none' : 'block';
+    logoutMobA.style.display = gmail ? 'block' : 'none';
 
 }
 function myCross() {
@@ -27,19 +27,19 @@ function myCross() {
 
 function showBox() {
     document.getElementById('box').style.display = 'block';
-    signinA.style.display = email ? 'none' : 'block';
-    signupA.style.display = email ? 'none' : 'block';
-    logoutA.style.display = email ? 'block' : 'none';
+    signinA.style.display = gmail ? 'none' : 'block';
+    signupA.style.display = gmail ? 'none' : 'block';
+    logoutA.style.display = gmail ? 'block' : 'none';
     eventOccur();
 }
 
 function show() {
     //console.log("button clicked");
-    localStorage.removeItem('loggedInUserEmail');
+    localStorage.removeItem('loggedInUsergmail');
     signinA.style.display = 'block';
     signupA.style.display = 'block';
     logoutA.style.display = 'none';
-    console.log(email);
+    console.log(gmail);
 }
 function eventOccur() {
     console.log("hello");
